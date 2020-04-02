@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- permissions -->
+    <string name="REQUEST_PERMISSION_DESCRIPT_CAMERA">Camera</string>
+    <string name="REQUEST_PERMISSION_DESCRIPT_CONTACT">Contacts</string>
+    <string name="REQUEST_PERMISSION_DESCRIPT_EXTERNAL_STORAGE">Storage</string>
+    <string name="REQUEST_PERMISSION_DESCRIPT_LOCATION">Location</string>
+    <string name="REQUEST_PERMISSION_DESCRIPT_READ_PHONE_STATE">Phone</string>
+    <string name="REQUEST_PERMISSION_DESCRIPT_RECORD_AUDIO">Microphone</string>
+    <string name="REQUEST_PERMISSION_DESCRIPT_SMS">Sms</string>
+
+    <string name="permission_request">&quot;&quot;</string>
+    <string name="permission_cancel">Cancel</string>
+    <string name="permission_go_to_settings">APP SETTINGS</string>
+    <string name="permission_multi_tip">To create a new video, go to Settings &gt; Permissions and allow access to %1$s</string>
+</resources>
