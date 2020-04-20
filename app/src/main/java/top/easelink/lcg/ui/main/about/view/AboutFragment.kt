@@ -23,6 +23,10 @@ class AboutFragment : TopFragment(), ControllableFragment {
         return inflater.inflate(R.layout.fragment_about, container, false)
     }
 
+    override fun isControllable(): Boolean {
+        return true
+    }
+
     override fun onViewCreated(
         view: View,
         savedInstanceState: Bundle?
