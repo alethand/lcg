@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.fragment_rank_list.view.*
+import kotlinx.android.synthetic.main.item_rank_list.view.*
 import top.easelink.lcg.R
 import top.easelink.lcg.ui.main.discover.model.RankListModel
 
@@ -34,7 +34,7 @@ class RankListBinder : BaseNavigationBinder<RankListModel, RankListVH>() {
 }
 
 class RankListVH(inflater: LayoutInflater, parentView: ViewGroup): BaseNavigationViewHolder(
-    inflater.inflate(R.layout.fragment_rank_list, parentView, false)
+    inflater.inflate(R.layout.item_rank_list, parentView, false)
 ) {
     fun onBind(item: RankListModel, payloads: List<Any>?) {
         setUp(item)

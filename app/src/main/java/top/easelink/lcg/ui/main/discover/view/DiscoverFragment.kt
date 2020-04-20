@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.drakeet.multitype.MultiTypeAdapter
@@ -15,6 +14,7 @@ import top.easelink.framework.topbase.ControllableFragment
 import top.easelink.framework.topbase.TopFragment
 import top.easelink.lcg.R
 import top.easelink.lcg.ui.main.discover.model.ForumListModel
+import top.easelink.lcg.ui.main.discover.model.LanzousSearchModel
 import top.easelink.lcg.ui.main.discover.model.RankListModel
 import top.easelink.lcg.ui.main.discover.viewmodel.DiscoverViewModel
 
@@ -57,10 +57,11 @@ class DiscoverFragment : TopFragment(), ControllableFragment{
             layoutManager =  LinearLayoutManager(context).also {
                 it.orientation = RecyclerView.VERTICAL
             }
-            itemAnimator = DefaultItemAnimator()
             val multiTypeAdapter =  MultiTypeAdapter().apply {
                 register(ForumListModel::class.java, ForumNavigationBinder())
                 register(RankListModel::class.java, RankListBinder())
+                register(LanzousSearchModel::class.java, LanzousSearchBinder())
+
             }
             mViewModel.aggregationModels.observe(viewLifecycleOwner, Observer {
                 multiTypeAdapter.items = it

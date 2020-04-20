@@ -92,6 +92,9 @@
     <string name="cancel_btn">取消</string>
     <string name="login_successfully">登陆成功</string>
 
+    <!--Lanzous Search-->
+    <string name="lanzous_search_title">尘心盘-蓝奏搜索</string>
+
     <!--Logout Dialog-->
     <string name="logout_confirm_message">退出账号@%s？</string>
     <string name="logout_confirm_btn">是的</string>
