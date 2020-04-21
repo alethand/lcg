@@ -30,7 +30,7 @@ object BaiduSearchService {
 
     @WorkerThread
     @Throws(RequestTooOftenException::class)
-    fun doSearchRequest(requestUrl: String): BaiduSearchResults {
+    suspend fun doSearchRequest(requestUrl: String): BaiduSearchResults {
         try {
             val doc = ApiClient.sendGetRequestWithUrl(requestUrl)
             val list: List<BaiduSearchResult> = doc?.select("div.result")
