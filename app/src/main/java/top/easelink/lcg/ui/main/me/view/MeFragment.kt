@@ -62,6 +62,11 @@ class MeFragment : BaseFragment<FragmentMeBinding, MeViewModel>() {
         }
         updateIconButtons()
         registerObservers()
+        updateIconButtons()
+        registerObservers()
+
+        //git push --set-upstream origin test
+        // git push --set-upstream origin test
     }
 
     private fun registerObservers() {
